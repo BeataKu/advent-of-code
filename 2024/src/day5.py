@@ -1,5 +1,5 @@
 
-filename = "./data/day4_input.txt"
+filename = "./data/day5_input.txt"
 
 text_file = open(filename, "r")
 lines = text_file.read().split('\n')
