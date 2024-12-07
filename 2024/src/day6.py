@@ -58,11 +58,17 @@ def start_moving(map : list, obstacles : list, current_position : tuple, directi
     print ('Current position: ', current_position)
     print ('Current direction: going', direction)
 
+
+    # move functions should move untill obstacles on a way or end of the map
+    # should return how many spaces moved
+    # should retunr next action = "end" or "turn"
+    # shoud return new position
+    loop = False
+    action = "END"
+
+    #while action != "END" or not loop :
+    
     if direction == "UP":
-        # this function should move up untill obstacles on a way or end of the map
-        # should return how many spaces moved
-        # should retunr next action = "end" or "turn"
-        # shoud return new position
         move_up()
     elif direction == "DOWN":
         move_down()
@@ -70,7 +76,8 @@ def start_moving(map : list, obstacles : list, current_position : tuple, directi
         move_left()
     else:        
         move_right()
-    
+
+        # add traveled places to total
     return 0
 
 
